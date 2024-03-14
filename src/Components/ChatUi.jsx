@@ -11,7 +11,7 @@ import "../../src/App.css";
 let socket;
 
 // Define the port for the connection to the server
-const CONNECTION_PORT = "localhost:3002/";
+const CONNECTION_PORT = "https://chat-app-socket-io-backend-3.onrender.com";
 
 // Define the functional component 'ChatUi'
 function ChatUi() {
