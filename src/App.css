@@ -1,0 +1,130 @@
+/* Resetting default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logIn,
+.chatContainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.logIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #d4af37;
+  /* Yellow color */
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.inputs input[type="text"]:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #800080;
+  /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b0082;
+  /* Darker shade of purple */
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.messageContainer {
+  padding: 10px;
+}
+
+.messageIndividual {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#You .messageIndividual {
+  background-color: #800080;
+  /* Purple color */
+  color: white;
+  align-self: flex-end;
+}
+
+#Other .messageIndividual {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.messageInputs {
+  display: flex;
+  align-items: center;
+}
+
+.messageInputs input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  margin-right: 15px;
+  border: 2px solid #d4af37;
+  /* Yellow color */
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.messageInputs button {
+  padding: 15px 30px;
+  background-color: #800080;
+  /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.messageInputs button:hover {
+  background-color: #4b0082;
+  /* Darker shade of purple */
+}
